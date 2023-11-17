@@ -12,4 +12,8 @@ class TmpViewForTestingZoomDeauthorizationUrl(views.APIView):
         logger.info(f'The Zoom Deauthorization Url works well. The request from Zoom has been received: {request}')
         logger.info(f'The Zoom Deauthorization Url request.params: {request.query_params}')
         logger.info(f'The Zoom Deauthorization Url request.data: {request.data}')
+
+        print(f'The Zoom Deauthorization Url works well. The request from Zoom has been received: {request}')
+        print(f'The Zoom Deauthorization Url request.params: {request.query_params}')
+        print(f'The Zoom Deauthorization Url request.data: {request.data}')
         return Response({'Success.'}, status=status.HTTP_200_OK)
